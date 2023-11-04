@@ -1,0 +1,31 @@
+.footer {
+  background: #2f324b;
+  padding: 45px;
+}
+
+.container--footer {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+
+  font-family: "Roboto Medium", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.copyright__text {
+  line-height: 140%;
+  text-align: left;
+  max-width: 130px;
+}
+
+.footer__created-by {
+  font-family: "Roboto Medium", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}

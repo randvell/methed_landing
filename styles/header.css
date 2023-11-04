@@ -1,0 +1,46 @@
+.present {
+  position: relative;
+  background: rgba(47, 50, 75, 0.85);
+  background-image: url('../images/present_bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: multiply;
+  padding-top: 40px;
+}
+
+.header__navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header__navigation {
+  margin-bottom: 120px;
+}
+
+.present__header {
+  margin-bottom: 35px;
+}
+
+.present__text {
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 140%;
+  font-size: 22px;
+
+  max-width: 960px;
+  margin-bottom: 90px;
+}
+
+.present__button {
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  font-family: "Roboto Medium", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  background: #15A9CB;
+  box-shadow: 0px 4px 25px 0px rgba(21, 169, 203, 0.30);
+  padding: 12px 48px;
+  margin-bottom: 120px;
+}

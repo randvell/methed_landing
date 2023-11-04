@@ -1,0 +1,17 @@
+.phone {
+  max-width: 210px;
+}
+
+.phone__number {
+  font-size: 24px;
+  padding-bottom: 3px;
+}
+
+.phone__call-request-btn {
+  color: var(--text-color);
+  text-decoration: underline;
+  cursor: pointer;
+
+  text-align: center;
+  font-size: 16px;
+}

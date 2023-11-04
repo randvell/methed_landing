@@ -1,0 +1,73 @@
+.questions {
+  position: relative;
+  background: rgba(47, 50, 75, 0.85);
+  background-image: url("../images/callback_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+.section__header--questions {
+  color: #fff;
+  padding-bottom: 17px;
+}
+
+.section__mid-header--questions {
+  color: rgba(255, 255, 255, 0.80);
+  margin-bottom: 50px;
+}
+
+.questions__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.questions__fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+.questions__input {
+  min-width: 423px;
+  height: 44px;
+  font-size: 22px;
+  padding: 9px 25px;
+
+  background: none;
+  border-radius: 50px;
+  border: 1.382px solid #fff;
+}
+
+.questions__input::placeholder {
+  color: rgba(255, 255, 255, 0.50);
+}
+
+.questions__button {
+  color: #fff;
+  font-variant: small-caps;
+
+  font-family: "Roboto Medium", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: normal;
+
+  border-radius: 50px;
+  background: #15a9cb;
+  box-shadow: 0px 4px 25px 0px rgba(21, 169, 203, 0.30);
+  padding: 11px 28px;
+  margin-bottom: 50px;
+}
+
+.questions__agreement {
+  font-size: 20px;
+}
+
+.questions__agreement-link {
+  color: #4A76A8;
+  text-decoration: underline;
+}

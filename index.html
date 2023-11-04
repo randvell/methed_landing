@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preload" href="./fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Roboto-Black.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="stylesheet" href="./styles/style.css">
+
+  <title>Yet another landing page</title>
+</head>
+
+<body>
+  <header class="present header">
+    <div class="container container__header">
+      <div class="header__navigation">
+        <img class="header__logo" src="assets/logo.svg">
+
+        <div class="phone">
+          <a class="phone__number" href="tel:+79625561234">+7 (962) 556 - 1234</a>
+          <button class="phone__call-request-btn" type="button">Перезвоните мне</button>
+        </div>
+      </div>
+
+      <h1 class="present__header">Заголовок c уникальным торговым предложение по системе 4U</h1>
+      <p class="present__text">Описания предложения компании. Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+        сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему.</p>
+      <button class="present__button" type="button">Подробнее</button>
+      <div class="present__overlay"></div>
+    </div>
+  </header>
+  <main>
+    <section class="section about">
+      <div class="container">
+        <h2 class="section__header section__header--about">Уникальный заголовок для преимущества компании</h2>
+        <h3 class="section__mid-header section__mid-header--about">О нас</h3>
+        <p class="about__section-text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+          несколько
+          абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить.</p>
+        <ul class="about__list">
+          <li class="about__item">
+            <div class="about__item-ellipse"></div>
+            <p class="about__item-text">Первое целевое преимущество</p>
+          </li>
+          <li class="about__item">
+            <div class="about__item-ellipse"></div>
+            <p class="about__item-text">Второе целевое преимущество</p>
+          </li>
+          <li class="about__item">
+            <div class="about__item-ellipse"></div>
+            <p class="about__item-text">Третье целевое преимущество</p>
+          </li>
+          <li class="about__item">
+            <div class="about__item-ellipse"></div>
+            <p class="about__item-text">Четвертое целевое преимущество</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section questions">
+      <div class="container">
+        <h2 class="section__header section__header--questions">Остались вопросы?</h2>
+        <h3 class="section__mid-header section__mid-header--questions">Оставьте номер телефона, и мы перезвоним вам</h3>
+        <form class="questions__form">
+          <fieldset class="questions__fieldset">
+            <input class="questions__input" placeholder="Ваше имя">
+            <input class="questions__input" placeholder="Телефон">
+            <input class="questions__input" placeholder="E-mail">
+          </fieldset>
+          <button class="questions__button" type="button">позвоните мне</button>
+          <p class="questions__agreement">Я даю своё <a class="questions__agreement-link" href="#">согласие</a> на
+            обработку моих персональных данных.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="section footer">
+    <div class="container container--footer">
+      <div class="copyright">
+        <img class="header__logo" src="assets/logo.svg">
+        <p class="copyright__text">© 2022 XXXcompany. Все права защищены.</p>
+      </div>
+      <p class="footer__created-by">Сделано в Ивановым Иваном</p>
+      <div class="phone">
+        <a class="phone__number" href="tel:+79625561234">+7 (962) 556 - 1234</a>
+        <button class="phone__call-request-btn" type="button">Перезвоните мне</button>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
