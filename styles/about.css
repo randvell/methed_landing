@@ -137,4 +137,36 @@
     font-size: 12px;
     margin-bottom: 40px;
   }
+
+  
+  .about__list {
+    position: relative;
+    padding-left: 40px;
+    align-items: center;
+    justify-content: center;
+
+    max-height: 200px;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .about__list::before {
+    position: absolute;
+    display: block;
+    content: url("../assets/left.svg");
+    width: 25px;
+    height: 25px;
+    top: 31%;
+    left: -15px;
+  }
+
+  .about__list::after {
+    position: absolute;
+    display: block;
+    content: url("../assets/right.svg");
+    width: 25px;
+    height: 25px;
+    top: 31%;
+    left: 220px;
+  }
 }
