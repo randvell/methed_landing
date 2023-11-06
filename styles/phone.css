@@ -1,3 +1,9 @@
+.phone-icon {
+  display: none;
+  height: 24px;
+  width: 24px;
+}
+
 .phone {
   max-width: 210px;
 }
@@ -8,10 +14,30 @@
 }
 
 .phone__call-request-btn {
-  color: var(--text-color);
+  color: #fff;
   text-decoration: underline;
   cursor: pointer;
 
   text-align: center;
   font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+  .phone__number {
+    font-size: 21px;
+  }
+
+  .phone__call-request-btn {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 320px) {
+  .phone {
+    display: none;
+  }
+
+  .phone-icon {
+    display: inline;
+  }
 }

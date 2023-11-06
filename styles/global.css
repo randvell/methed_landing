@@ -26,8 +26,8 @@ body {
   font-weight: 400;
   text-align: center;
 
-  color: var(--text-color);
-  background-color: var(--bg-color);
+  color: #fff;
+  background-color: #fff;
 }
 
 img,
@@ -83,7 +83,7 @@ iframe {
 }
 
 .section {
-  padding: 70px 0;
+  padding: 70px 30px;
 }
 
 .container {
@@ -91,6 +91,15 @@ iframe {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  max-width: var(--max-width);
-  padding: var(--container-padding);
+  max-width: 1200px;
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 320px) {
+  .section {
+    padding: 30px 15px;
+  }
 }

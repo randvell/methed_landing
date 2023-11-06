@@ -10,11 +10,17 @@
 
 .section__header--questions {
   color: #fff;
-  padding-bottom: 17px;
+  margin-bottom: 17px;
 }
 
-.section__mid-header--questions {
+.questions__description {
   color: rgba(255, 255, 255, 0.80);
+  font-family: "Roboto Medium", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
   margin-bottom: 50px;
 }
 
@@ -33,14 +39,16 @@
 }
 
 .questions__input {
-  min-width: 423px;
+  width: 423px;
   height: 44px;
   font-size: 22px;
+  font-style: normal;
+  line-height: normal;
   padding: 9px 25px;
 
   background: none;
   border-radius: 50px;
-  border: 1.382px solid #fff;
+  border: 2px solid #fff;
 }
 
 .questions__input::placeholder {
@@ -59,7 +67,7 @@
   border-radius: 50px;
   background: #15a9cb;
   box-shadow: 0px 4px 25px 0px rgba(21, 169, 203, 0.30);
-  padding: 11px 28px;
+  padding: 11px 38px;
   margin-bottom: 50px;
 }
 
@@ -70,4 +78,64 @@
 .questions__agreement-link {
   color: #4A76A8;
   text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  .questions__description {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  .questions__fieldset {
+    gap: 20px;
+  }
+
+  .questions__input {
+    width: 377px;
+    height: 39px;
+    padding: 8px 23px;
+    font-size: 20px;
+  }
+
+  .questions__button {
+    margin-bottom: 30px;
+  }
+
+  .questions__agreement {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 440px) {
+  .questions__fieldset {
+    gap: 15px;
+    margin-bottom: 45px;
+  }
+
+  .questions__input {
+    max-width: 290px;
+    width: 290px;
+    height: 28px;
+    padding: 6px 18px;
+    font-size: 14px;
+    border: 1px solid #fff;
+  }
+
+  .section__header--questions {
+    margin-bottom: 11px;
+  }
+
+  .questions__description {
+    font-size: 12px;
+    margin-bottom: 35px;
+  }
+
+  .questions__button {
+    font-size: 16px;
+    padding: 10px 26px;
+  }
+
+  .questions__agreement {
+    font-size: 11px;
+  }
 }

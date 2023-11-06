@@ -1,12 +1,12 @@
-.present {
+.header {
   position: relative;
   background: rgba(47, 50, 75, 0.85);
   background-image: url('../images/present_bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
   background-blend-mode: multiply;
   padding-top: 40px;
+  padding-bottom: 0;
 }
 
 .header__navigation {
@@ -15,11 +15,22 @@
   width: 100%;
 }
 
-.header__navigation {
-  margin-bottom: 120px;
+.present {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 0;
 }
 
 .present__header {
+  font-family: "Roboto Black", sans-serif;
+  color: rgba(255, 255, 255, 0.86);
+  text-align: center;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+
   margin-bottom: 35px;
 }
 
@@ -42,5 +53,50 @@
   background: #15A9CB;
   box-shadow: 0px 4px 25px 0px rgba(21, 169, 203, 0.30);
   padding: 12px 48px;
-  margin-bottom: 120px;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    padding-top: 26px;
+  }
+
+  .present {
+    padding: 70px 0;
+  }
+
+  .present__header {
+    font-size: 40px;
+    margin-bottom: 28px;
+  }
+
+  .present__text {
+    max-width: 754px;
+    font-size: 18px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 320px) {
+  .header {
+    padding-top: 15px;
+  }
+
+  .present {
+    padding: 65px 0;
+  }
+
+  .present__header {
+    font-size: 20px;
+    margin-bottom: 23px;
+  }
+
+  .present__text {
+    font-size: 14px;
+    margin-bottom: 54px;
+  }
+
+  .present__button {
+    font-size: 16px;
+    padding: 9px 29px;
+  }
 }

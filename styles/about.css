@@ -29,6 +29,7 @@
 }
 
 .about__section-text {
+  font-size: 18px;
   line-height: 140%;
   max-width: 724px;
   margin-bottom: 50px;
@@ -36,7 +37,9 @@
 
 .about__list {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
+  justify-content: center;
   gap: 50px;
   counter-reset: count 0;
 }
@@ -65,8 +68,8 @@
   position: absolute;
   content: counter(count);
   color: #fff;
-  top: 32px;
-  left: 44px;
+  top: 25%;
+  left: 36%;
   font-family: "Roboto Medium", sans-serif;
   font-size: 57px;
   font-weight: 500;
@@ -79,4 +82,59 @@
   font-size: 20px;
   font-weight: 500;
   line-height: 140%;
+  max-width: 200px;
+}
+
+@media (max-width: 1024px) {
+  .section__header--about {
+    margin-bottom: 23px;
+  }
+
+  .section__mid-header--about::before,
+  .section__mid-header--about::after {
+    width: 40px;
+  }
+
+  .about__section-text {
+    max-width: 666px;
+    font-size: 16px;
+  }
+
+  .about__item {
+    gap: 26px 40px;
+  }
+
+  .about__item-ellipse {
+    width: 104px;
+    height: 104px;
+  }
+
+  .about__item-ellipse::after {
+    font-size: 52px;
+  }
+
+  .about__item-text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 320px) {
+  .about {
+    padding-bottom: 60px;
+  }
+
+  .section__header--about {
+    margin-bottom: 15px;
+  }
+
+  .section__mid-header--about::before,
+  .section__mid-header--about::after {
+    width: 20px;
+    height: 1px;
+  }
+
+  .about__section-text {
+    font-size: 12px;
+    margin-bottom: 40px;
+  }
 }
