@@ -32,7 +32,8 @@
   font-size: 18px;
   line-height: 140%;
   max-width: 724px;
-  margin-bottom: 50px;
+  height: 83px;
+  margin-bottom: 53px;
 }
 
 .about__list {
@@ -68,7 +69,7 @@
   position: absolute;
   content: counter(count);
   color: #fff;
-  top: 25%;
+  top: 29%;
   left: 36%;
   font-family: "Roboto Medium", sans-serif;
   font-size: 57px;
@@ -82,12 +83,16 @@
   font-size: 20px;
   font-weight: 500;
   line-height: 140%;
-  max-width: 200px;
+  max-width: 196px;
 }
 
 @media (max-width: 1024px) {
   .section__header--about {
     margin-bottom: 23px;
+  }
+
+  .section__mid-header--about {
+    margin-bottom: 32px;;
   }
 
   .section__mid-header--about::before,
@@ -97,7 +102,9 @@
 
   .about__section-text {
     max-width: 666px;
+    height: 76px;
     font-size: 16px;
+    margin-bottom: 50px;
   }
 
   .about__item {
@@ -114,6 +121,8 @@
   }
 
   .about__item-text {
+    max-width: 180px;
+    vertical-align: middle;
     font-size: 18px;
   }
 }
@@ -124,7 +133,12 @@
   }
 
   .section__header--about {
-    margin-bottom: 15px;
+    margin-bottom: 19px;
+  }
+
+  .section__mid-header--about {
+    gap: 26px;
+    margin-bottom: 27px;
   }
 
   .section__mid-header--about::before,
@@ -135,38 +149,22 @@
 
   .about__section-text {
     font-size: 12px;
-    margin-bottom: 40px;
   }
 
-  
   .about__list {
+    gap: 40px;
     position: relative;
-    padding-left: 40px;
-    align-items: center;
-    justify-content: center;
 
-    max-height: 200px;
+    /* Slider
     flex-direction: column;
     overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    max-height: 200px; 
+    */
   }
 
-  .about__list::before {
-    position: absolute;
-    display: block;
-    content: url("../assets/left.svg");
-    width: 25px;
-    height: 25px;
-    top: 31%;
-    left: -15px;
-  }
-
-  .about__list::after {
-    position: absolute;
-    display: block;
-    content: url("../assets/right.svg");
-    width: 25px;
-    height: 25px;
-    top: 31%;
-    left: 220px;
+  .about__item-text {
+    height: 52px;
   }
 }

@@ -11,6 +11,7 @@
 .section__header--questions {
   color: #fff;
   margin-bottom: 17px;
+  padding-right: 25px;
 }
 
 .questions__description {
@@ -47,10 +48,10 @@
   line-height: normal;
   padding: 9px 25px;
 
-  outline: none;
+  outline: 2px solid #fff;
   background: none;
   border-radius: 50px;
-  border: 2px solid #fff;
+  border: none;
 }
 
 .questions__input::placeholder {
@@ -80,12 +81,22 @@
 .questions__agreement-link {
   color: #4A76A8;
   text-decoration: underline;
+  text-underline-offset: 6px;
 }
 
 @media (max-width: 1024px) {
+  .questions {
+    padding-bottom: 56px;
+  }
+
+  .section__header--questions {
+    padding-left: 16px;
+  }
+  
   .questions__description {
     font-size: 20px;
-    margin-bottom: 16px;
+    padding-left: 17px;
+    margin-bottom: 50px;
   }
 
   .questions__fieldset {
@@ -109,6 +120,10 @@
 }
 
 @media (max-width: 440px) {
+  .questions {
+    padding-bottom: 27px;
+  }
+
   .questions__fieldset {
     gap: 15px;
     margin-bottom: 45px;
@@ -120,16 +135,18 @@
     height: 28px;
     padding: 6px 18px;
     font-size: 14px;
-    border: 1px solid #fff;
+    outline: 1px solid #fff;
   }
 
   .section__header--questions {
-    margin-bottom: 11px;
+    padding-left: 23px;
+    margin-bottom: 12px;
   }
 
   .questions__description {
     font-size: 12px;
-    margin-bottom: 35px;
+    margin-bottom: 37px;
+    padding-left: 0;
   }
 
   .questions__button {
@@ -139,5 +156,13 @@
 
   .questions__agreement {
     font-size: 11px;
+  }
+
+  .questions__agreement-link {
+    text-underline-offset: 2px;
+  }
+
+  .questions__button {
+    width: 174px;
   }
 }

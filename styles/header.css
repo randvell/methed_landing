@@ -12,6 +12,7 @@
 .header__navigation {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 
@@ -39,10 +40,14 @@
   color: rgba(255, 255, 255, 0.75);
   line-height: 140%;
   font-size: 22px;
-  line-height: 160%;
+  line-height: 126%;
 
   max-width: 960px;
   margin-bottom: 90px;
+}
+
+.present__text--short {
+  display: none;
 }
 
 .present__button {
@@ -73,8 +78,10 @@
   }
 
   .present__text {
+    max-height: 70px;
     max-width: 754px;
     font-size: 18px;
+    line-height: 140%;
     margin-bottom: 60px;
   }
 }
@@ -94,11 +101,18 @@
   }
 
   .present__text {
+    display: none;
     font-size: 14px;
-    margin-bottom: 54px;
+    line-height: 140%;
+    margin-bottom: 64px;
+  }
+
+  .present__text--short {
+    display: inline;
   }
 
   .present__button {
+    width: 160px;
     font-size: 16px;
     padding: 9px 29px;
   }

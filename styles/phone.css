@@ -5,19 +5,21 @@
 }
 
 .phone {
-  max-width: 210px;
+  display: flex;
+  flex-direction: column;
 }
 
 .phone__number {
   font-size: 24px;
-  padding-bottom: 3px;
 }
 
 .phone__call-request-btn {
   color: #fff;
   text-decoration: underline;
+  text-underline-offset: 6px;
   cursor: pointer;
 
+  padding-top: 5px;
   text-align: center;
   font-size: 16px;
 }
@@ -25,6 +27,7 @@
 @media (max-width: 1024px) {
   .phone__number {
     font-size: 21px;
+    line-height: normal;
   }
 
   .phone__call-request-btn {
