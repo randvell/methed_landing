@@ -7,7 +7,6 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  transition: outline 1s ease;
 }
 
 body {
@@ -98,7 +97,7 @@ iframe {
 
 }
 
-@media (max-width: 320px) {
+@media (max-width: 440px) {
   .section {
     padding: 30px 15px;
   }
