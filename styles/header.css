@@ -20,7 +20,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 120px 0;
+  padding: 119px 0;
 }
 
 .present__header {
@@ -32,15 +32,15 @@
   font-weight: 900;
   line-height: normal;
 
-  margin-bottom: 35px;
+  margin-bottom: 34px;
   max-width: 990px;
+  max-height: 122px;
 }
 
 .present__text {
   color: rgba(255, 255, 255, 0.75);
-  line-height: 140%;
   font-size: 22px;
-  line-height: 126%;
+  line-height: 140%;
 
   max-width: 960px;
   margin-bottom: 90px;
@@ -68,7 +68,7 @@
   }
 
   .present {
-    padding: 70px 0;
+    padding: 69px 0 71px 0;
   }
 
   .present__header {

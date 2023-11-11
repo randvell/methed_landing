@@ -61,6 +61,7 @@
 .questions__button {
   color: #fff;
   font-variant: small-caps;
+  text-transform: lowercase;
 
   font-family: "Roboto Medium", sans-serif;
   font-size: 20px;
@@ -71,7 +72,7 @@
   background: #15a9cb;
   box-shadow: 0px 4px 25px 0px rgba(21, 169, 203, 0.30);
   padding: 11px 38px;
-  margin-bottom: 50px;
+  margin-bottom: 53px;
 }
 
 .questions__agreement {
@@ -81,7 +82,7 @@
 .questions__agreement-link {
   color: #4A76A8;
   text-decoration: underline;
-  text-underline-offset: 6px;
+  text-underline-offset: 4px;
 }
 
 @media (max-width: 1024px) {
@@ -91,6 +92,7 @@
 
   .section__header--questions {
     padding-left: 16px;
+    margin-bottom: 15px;
   }
   
   .questions__description {
@@ -111,22 +113,26 @@
   }
 
   .questions__button {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
   }
 
   .questions__agreement {
     font-size: 17px;
   }
+
+  .questions__agreement-link {
+    text-underline-offset: 3px;
+  }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 480px) {
   .questions {
-    padding-bottom: 27px;
+    padding-bottom: 28px;
   }
 
   .questions__fieldset {
     gap: 15px;
-    margin-bottom: 45px;
+    margin-bottom: 44px;
   }
 
   .questions__input {
@@ -163,6 +169,8 @@
   }
 
   .questions__button {
+    text-transform: initial;
     width: 174px;
+    margin-bottom: 30px;
   }
 }

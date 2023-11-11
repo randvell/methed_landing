@@ -25,13 +25,21 @@
 }
 
 @media (max-width: 1024px) {
+  .phone {
+    margin-bottom: 4px;
+    padding-right: 1px;
+  }
+
   .phone__number {
+    max-height: 26px;
     font-size: 21px;
     line-height: normal;
+    padding-bottom: 2px;
   }
 
   .phone__call-request-btn {
     font-size: 13px;
+    line-height: normal;
   }
 }
 
@@ -42,5 +50,10 @@
 
   .phone-icon {
     display: inline;
+
+  }
+
+  .phone-icon--footer {
+    margin-right: 16px;
   }
 }
